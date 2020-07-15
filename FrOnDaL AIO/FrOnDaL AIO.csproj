@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A1D86E6-FB6E-4A40-99B9-754D0C8A3F40}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrOnDaL_AIO</RootNamespace>
+    <AssemblyName>FrOnDaL AIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <OutputPath>bin\Release</OutputPath>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnsoulSharp.SDK, Version=1.0.0.20, Culture=neutral, PublicKeyToken=bcecb37b3b5656dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\figo283\Desktop\Programy\EnsoulSharp1\System\EnsoulSharp.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="EnsoulSharp.Wrapper, Version=1.0.0.19, Culture=neutral, PublicKeyToken=a47cf8ceb3524cd7, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\figo283\Desktop\Programy\EnsoulSharp1\System\EnsoulSharp.Wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=2.6.3.0, Culture=neutral, PublicKeyToken=2306ab36a61019a8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\figo283\Desktop\Programy\EnsoulSharp1\System\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=2.6.3.0, Culture=neutral, PublicKeyToken=2306ab36a61019a8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\figo283\Desktop\Programy\EnsoulSharp1\System\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Champions\Ashe.cs" />
+    <Compile Include="Champions\Katarina.cs" />
+    <Compile Include="Champions\Orianna.cs" />
+    <Compile Include="Common\DamageIndicator\DamageIndicator.cs" />
+    <Compile Include="Common\Utilities\Extensions.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\BlockSpellData.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\BlockSpellDataBase.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\Collision.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\CollisionObjectTypes.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\DamageBoostDatabase.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\DetectedCollision.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\DetectionType.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\EvadeManager.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\EvadeOthers.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\EvadeSpellData.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\EvadeSpellDatabase.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\EvadeTargetManager.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\FastPredResult.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\FoundIntersection.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\Geometry.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\IsSafeResult.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\SafePathResult.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\Skillshot.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\SkillshotDetector.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\SkillShotType.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\SpellData.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\SpellDatabase.cs" />
+    <Compile Include="Common\Utilities\SpellBlocking\Utils.cs" />
+    <Compile Include="Common\Utilities\spellMisc.cs" />
+    <Compile Include="Common\Utilities\SPrediction\AIHeroClientExtensions.cs" />
+    <Compile Include="Common\Utilities\SPrediction\ArcPrediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\CirclePrediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\ClipperWrapper.cs" />
+    <Compile Include="Common\Utilities\SPrediction\Collision.cs" />
+    <Compile Include="Common\Utilities\SPrediction\ConePrediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\ConfigMenu.cs" />
+    <Compile Include="Common\Utilities\SPrediction\Drawings.cs" />
+    <Compile Include="Common\Utilities\SPrediction\Geometry.cs" />
+    <Compile Include="Common\Utilities\SPrediction\LinePrediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\MinionManager.cs" />
+    <Compile Include="Common\Utilities\SPrediction\PathTracker.cs" />
+    <Compile Include="Common\Utilities\SPrediction\Prediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\RingPrediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\SpellExtensions.cs" />
+    <Compile Include="Common\Utilities\SPrediction\StasisPrediction.cs" />
+    <Compile Include="Common\Utilities\SPrediction\Utility.cs" />
+    <Compile Include="Common\Utilities\SPrediction\VectorPrediction.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
