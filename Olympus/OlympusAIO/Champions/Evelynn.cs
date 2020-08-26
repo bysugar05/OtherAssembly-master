@@ -220,7 +220,7 @@ namespace OlympusAIO.Champions
                     {
                         if (Misc.IsAllured(target))
                         {
-                            if (!Misc.IsFullyAllured(target) || MenuManager.ComboMenu["QOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled)
+                            if (MenuManager.ComboMenu["QOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled && !Misc.IsFullyAllured(target))
                                 return;
 
                             if (Misc.IsQSkillshot())
@@ -265,7 +265,7 @@ namespace OlympusAIO.Champions
 
                         if (Misc.IsAllured(firstTarget))
                         {
-                            if (!Misc.IsFullyAllured(firstTarget) || MenuManager.ComboMenu["EOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled)
+                             if (MenuManager.ComboMenu["EOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled && !Misc.IsFullyAllured(target))
                                 return;
 
                             SpellManager.E.CastOnUnit(firstTarget);
