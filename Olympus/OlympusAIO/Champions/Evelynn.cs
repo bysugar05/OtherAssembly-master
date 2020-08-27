@@ -478,7 +478,7 @@ namespace OlympusAIO.Champions
                 if (!target.HasBuff("EvelynnW"))
                     return false;
 
-                var normalObjects = ObjectManager.Get<GameObject>().Where(x => x.IsValid && x.Name == "Evelynn_Base_W_Fizz_Mark_Decay");
+                var normalObjects = ObjectManager.Get<GameObject>().Where(x => x.IsValid && x.Name.Contains("Evelynn_Base") x.Name == "Evelynn_Base_W_Fizz_Mark_Decay");
 
                 return normalObjects.Any(x => ObjectManager.Get<AIBaseClient>().Where(c => c.Team != x.Team).MinBy(c => c.Distance(x)) == target);
             }
