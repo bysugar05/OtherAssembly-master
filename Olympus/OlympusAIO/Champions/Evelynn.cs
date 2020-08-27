@@ -265,7 +265,7 @@ namespace OlympusAIO.Champions
 
                         if (Misc.IsAllured(firstTarget))
                         {
-                             if (MenuManager.ComboMenu["EOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled && !Misc.IsFullyAllured(target))
+                             if (MenuManager.ComboMenu["EOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled && !Misc.IsFullyAllured(firstTarget))
                                 return;
 
                             SpellManager.E.CastOnUnit(firstTarget);
