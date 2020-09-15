@@ -257,7 +257,7 @@ namespace OlympusAIO.Champions
                 }
                 if (MenuManager.ComboMenu["E"].GetValue<MenuBool>().Enabled && SpellManager.E.IsReady())
                 {
-                    var target = TargetSelector.GetTargets(SpellManager.E.Range).OrderByDescending(x => Misc.IsFullyAllured(x));
+                    var target = TargetSelector.GetTargets(SpellManager.E.Range).OrderBy(x => Misc.IsFullyAllured(x));
 
                     if (target != null && target.FirstOrDefault().IsValidTarget(SpellManager.W.Range))
                     {
@@ -265,7 +265,7 @@ namespace OlympusAIO.Champions
 
                         if (Misc.IsAllured(firstTarget))
                         {
-                             if (MenuManager.ComboMenu["EOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled && !Misc.IsFullyAllured(firstTarget))
+                            if (MenuManager.ComboMenu["EOnlyIfFullyAllured"].GetValue<MenuBool>().Enabled && !Misc.IsFullyAllured(firstTarget))
                                 return;
 
                             SpellManager.E.CastOnUnit(firstTarget);
@@ -476,9 +476,11 @@ namespace OlympusAIO.Champions
             public static bool IsFullyAllured(AIBaseClient target)
             {
                 if (!target.HasBuff("EvelynnW"))
+                {
                     return false;
+                }
 
-                var normalObjects = ObjectManager.Get<GameObject>().Where(x => x.IsValid && x.Name.Contains("Evelynn_Base"));
+                var normalObjects = ObjectManager.Get<GameObject>().Where(x => x.IsValid && x.Name.Contains("Evelynn_Base_W_Fizz_Mark_Decay"));
 
                 return normalObjects.Any(x => ObjectManager.Get<AIBaseClient>().Where(c => c.Team != x.Team).MinBy(c => c.Distance(x)) == target);
             }
