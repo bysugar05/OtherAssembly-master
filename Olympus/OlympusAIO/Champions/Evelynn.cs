@@ -257,7 +257,7 @@ namespace OlympusAIO.Champions
                 }
                 if (MenuManager.ComboMenu["E"].GetValue<MenuBool>().Enabled && SpellManager.E.IsReady())
                 {
-                    var target = TargetSelector.GetTargets(SpellManager.E.Range).OrderByDescending(x => Misc.IsFullyAllured(x));
+                    var target = TargetSelector.GetTargets(SpellManager.E.Range).OrderBy(x => Misc.IsFullyAllured(x));
 
                     if (target != null && target.FirstOrDefault().IsValidTarget(SpellManager.W.Range))
                     {
