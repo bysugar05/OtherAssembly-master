@@ -46,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowBuild.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
@@ -77,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601797140240</updated>
       <workItem from="1601797152012" duration="466000" />
-      <workItem from="1601800555410" duration="1887000" />
+      <workItem from="1601800555410" duration="2189000" />
     </task>
     <servers />
   </component>

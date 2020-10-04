@@ -153,7 +153,9 @@ namespace DarkMage
                 return GetW.Cast(wTarget.Position);
             }
 
-            if (buff != null && !buff.IsActive)
+            var secondBuff = ObjectManager.Player.GetBuff("syndrawtooltip");
+
+            if (secondBuff == null)
             {
                 var orb = GetOrbs.GetOrbToGrab((int) GetW.Range);
 
