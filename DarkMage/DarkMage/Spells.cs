@@ -156,7 +156,7 @@ namespace DarkMage
             {
                 var orb = GetOrbs.GetOrbToGrab((int) GetW.Range);
 
-                if (!orb.IsZero)
+                if (!orb.IsZero && ObjectManager.Player.GetBuff("syndrawtooltip") == null)
                 {
                     return GetW.Cast(orb);   
                 }
