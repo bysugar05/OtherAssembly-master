@@ -152,11 +152,11 @@ namespace DarkMage
 
                 return GetW.Cast(wTarget.Position);
             }
-            else
+            else if (Variables.GameTimeTickCount - GetW.LastCastAttemptT > 1000)
             {
                 var orb = GetOrbs.GetOrbToGrab((int) GetW.Range);
 
-                if (!orb.IsZero && ObjectManager.Player.GetBuff("syndrawtooltip") == null)
+                if (!orb.IsZero)
                 {
                     return GetW.Cast(orb);   
                 }
