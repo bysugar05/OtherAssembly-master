@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\babazhou\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\babazhou\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_DarkMage.-1747749313.00" t="ExcludeRecursive" />
-    <e p="C:\Users\babazhou\Desktop\DarkMage" t="IncludeFlat">
+    <e p="C:\Users\babazhou\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_DarkMage.1798275569.00" t="ExcludeRecursive" />
+    <e p="C:\Users\babazhou\Documents\GitHub\OtherAssembly-master\DarkMage" t="IncludeFlat">
       <e p="DarkMage" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />

@@ -143,12 +143,14 @@ namespace DarkMage
 
             if (buff != null && buff.IsActive && buff.IsValid)
             {
-                var wPred = GetW.GetPrediction(wTarget);
+                /*var wPred = GetW.GetPrediction(wTarget);
 
                 if (wPred.Hitchance >= HitChance.High)
                 {
                     return GetW.Cast(wPred.CastPosition);
-                }
+                }*/
+
+                return GetW.Cast(wTarget.Position);
             }
 
             if (buff == null || !buff.IsActive)
