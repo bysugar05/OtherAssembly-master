@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\babazhou\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\babazhou\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_DarkMage.-1747749313.00" t="ExcludeRecursive" />
+    <e p="C:\Users\babazhou\Desktop\DarkMage" t="IncludeFlat">
+      <e p="DarkMage" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Champion.cs" t="Include" />
+        <e p="DarkMage.csproj" t="IncludeRecursive" />
+        <e p="DrawDamage.cs" t="Include" />
+        <e p="Ext.cs" t="Include" />
+        <e p="GameEvents.cs" t="Include" />
+        <e p="Menu" t="Include">
+          <e p="Menu.cs" t="Include" />
+          <e p="SyndraMenu.cs" t="Include" />
+        </e>
+        <e p="MinionManager.cs" t="Include" />
+        <e p="Modes" t="Include">
+          <e p="Modes.cs" t="Include" />
+          <e p="SyndraModes.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="OrbManager.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Spells.cs" t="Include" />
+        <e p="SyndraCore.cs" t="Include" />
+      </e>
+      <e p="DarkMage.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
