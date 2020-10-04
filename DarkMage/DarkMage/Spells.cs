@@ -153,11 +153,14 @@ namespace DarkMage
                 return GetW.Cast(wTarget.Position);
             }
 
-            if (buff == null || !buff.IsActive)
+            if (buff == null)
             {
                 var orb = GetOrbs.GetOrbToGrab((int) GetW.Range);
 
-                return GetW.Cast(orb);
+                if (!orb.IsZero)
+                {
+                    return GetW.Cast(orb);   
+                }
             }
 
             return false;
