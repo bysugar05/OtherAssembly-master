@@ -3,15 +3,15 @@ using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EnsoulSharp.SDK;
-using EnsoulSharp.SDK.MenuUI;
-using EnsoulSharp.SDK.MenuUI.Values;
-using EnsoulSharp.SDK.Prediction;
-using EnsoulSharp.SDK.Utility;
-using EnsoulSharp;
+using WS.SDK;
+using WS.SDK.MenuUI;
+using WS.SDK.MenuUI.Values;
+using WS.SDK.Prediction;
+using WS.SDK.Utility;
+using WS;
 using SharpDX;
 using Color = System.Drawing.Color;
-using static EnsoulSharp.SDK.Items;
+using static WS.SDK.Items;
 
 namespace ChewyMoonsShaco
 {
